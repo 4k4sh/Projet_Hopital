@@ -5,7 +5,7 @@
  */
 package Connexion;
 
-import Modele.Chambre;
+import Modèle.Chambre;
 import java.sql.*;
 import java.util.*;
 

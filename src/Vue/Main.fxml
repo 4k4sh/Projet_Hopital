@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="478.0" prefWidth="631.0" styleClass="background"  xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.MainController">
+  <children>
+    <TabPane prefHeight="478.0" prefWidth="631.0" styleClass="background"  tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <tabs>
+        <Tab text="Mise à jour données">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TabPane layoutX="0.0" layoutY="0.0" prefHeight="447.0" prefWidth="631.0" tabClosingPolicy="UNAVAILABLE">
+                  <tabs>
+                    <Tab text="Ajout">
+                      <content>
+                        <fx:include id="ajout" fx:id="Ajout" source="Ajout.fxml" />
+                      </content>
+                    </Tab>
+                    <Tab text="Modification">
+                      <content>
+                        <fx:include fx:id="Edit" source="Edit.fxml" />
+                      </content>
+                    </Tab>
+                    <Tab text="Suppression">
+                      <content>
+                        <fx:include fx:id="Delete" source="Delete.fxml" />
+                      </content>
+                    </Tab>
+                  </tabs>
+                </TabPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Recherche">
+          <content>
+            <fx:include fx:id="Recherche" source="Recherche.fxml" />
+          </content>
+        </Tab>
+        <Tab text="Reporting">
+          <content>
+            <fx:include fx:id="Reporting" source="Reporting.fxml" />
+          </content>
+        </Tab>
+      </tabs>
+         
+    </TabPane>
+    <Button fx:id="retour" layoutX="471.0" layoutY="5.0" mnemonicParsing="false" onAction="#handleRetour" prefWidth="141.0" text="Retour Accueil" />
+  </children>
+</AnchorPane>
