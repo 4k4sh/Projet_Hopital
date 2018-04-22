@@ -5,7 +5,7 @@
  */
 package Connexion;
 
-import Modele.Employe;
+import Modèle.Employe;
 import java.sql.*;
 import java.util.ArrayList;
 

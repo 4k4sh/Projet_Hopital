@@ -1,14 +1,14 @@
 package Controleur;
 
 import Connexion.DAOFactory;
-import Modele.Chambre;
-import Modele.Docteur;
-import Modele.Employe;
-import Modele.Hospitalisation;
-import Modele.Infirmier;
-import Modele.Malade;
-import Modele.Service;
-import Modele.Soigne;
+import Modèle.Chambre;
+import Modèle.Docteur;
+import Modèle.Employe;
+import Modèle.Hospitalisation;
+import Modèle.Infirmier;
+import Modèle.Malade;
+import Modèle.Service;
+import Modèle.Soigne;
 import java.sql.Connection;
 import java.util.ArrayList;
 import javafx.scene.control.Alert;

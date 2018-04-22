@@ -5,7 +5,7 @@
  */
 package Connexion;
 
-import Modele.Docteur;
+import Modèle.Docteur;
 import java.sql.*;
 import java.util.ArrayList;
 

@@ -5,7 +5,7 @@
  */
 package Connexion;
 
-import Modele.Infirmier;
+import Modèle.Infirmier;
 import java.sql.*;
 import java.util.ArrayList;
 

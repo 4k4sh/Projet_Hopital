@@ -2,7 +2,7 @@ package Controleur;
 
 import Connexion.Connexion;
 import Connexion.DAOFactory;
-import Modele.*;
+import Modèle.*;
 import Vue.MainApp;
 import java.net.URL;
 import java.sql.Connection;

@@ -2,7 +2,7 @@ package Controleur;
 
 import Connexion.DAOFactory;
 import Connexion.Connexion;
-import Modele.*;
+import Modèle.*;
 import java.net.URL;
 import java.sql.Connection;
 import java.util.ArrayList;

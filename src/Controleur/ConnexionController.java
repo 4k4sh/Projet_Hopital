@@ -1,6 +1,7 @@
 package Controleur;
 
 import Connexion.Connexion;
+import java.awt.AWTException;
 import Vue.MainApp;
 import java.net.URL;
 import java.sql.SQLException;
