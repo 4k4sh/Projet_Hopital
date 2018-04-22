@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="416.0" prefWidth="631.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.DeleteController">
+  <children>
+    <Label fx:id="labId2" layoutX="316.0" layoutY="93.0" prefWidth="83.0" text="Label" />
+    <ComboBox id="id1" fx:id="Id1" layoutX="155.0" layoutY="93.0" prefHeight="21.0" prefWidth="136.0" visible="true">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Button fx:id="ok" layoutX="291.0" layoutY="136.0" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+    <Label layoutX="23.0" layoutY="51.0" prefHeight="26.0" prefWidth="238.0" text="Choix élement à supprimer" />
+    <Label fx:id="labId1" layoutX="23.0" layoutY="93.0" prefWidth="112.0" text="ID" />
+    <ComboBox id="id2" fx:id="Id2" layoutX="425.0" layoutY="90.0" prefHeight="22.0" prefWidth="160.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox id="id2" fx:id="Classe" layoutX="291.0" layoutY="51.0" onAction="#handleClasseAction" prefHeight="22.0" prefWidth="160.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TextArea blendMode="EXCLUSION" layoutX="187.0" layoutY="216.0" prefHeight="107.0" prefWidth="258.0" text=" /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\&#10;ATTENTION SI VOUS SUPPRIMEZ UN ELEMENT QUI EST REFERENCÉ DANS D'AUTRES TABLES CELA SUPPRIMERA TOUTES LES ENTRÉES QUI CONTIENNENT UNE OCCURENCE DE CET ELEMENT" wrapText="true" />
+  </children>
+</AnchorPane>

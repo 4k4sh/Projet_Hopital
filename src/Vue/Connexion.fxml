@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.ConnexionController">
+  <children>
+    <GridPane layoutX="97.0" layoutY="116.0" prefHeight="180.0" prefWidth="370.0">
+      <children>
+        <Label fx:id="lab1" contentDisplay="CENTER" prefWidth="174.0" text="Nom de la base" textAlignment="JUSTIFY" />
+        <Label fx:id="lab2" contentDisplay="CENTER" prefWidth="174.0" text="Login" GridPane.rowIndex="1" />
+        <Label fx:id="lab3" contentDisplay="CENTER" prefWidth="185.0" text="Mot de passe Base" GridPane.rowIndex="2" />
+        <Label fx:id="lab4" contentDisplay="CENTER" prefWidth="174.0" text="Serveur de la Base" GridPane.rowIndex="3" />
+        <TextField fx:id="txt1" prefWidth="200.0" GridPane.columnIndex="1" />
+        <TextField fx:id="txt2" prefWidth="64.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="txt4" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <PasswordField fx:id="txt3" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField id="txt4" fx:id="txt5" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <Label id="lab4" fx:id="lab5" contentDisplay="CENTER" prefWidth="174.0" text="Login ECE" GridPane.rowIndex="4" />
+        <Label id="lab4" fx:id="lab6" contentDisplay="CENTER" prefWidth="174.0" text="Mot de passe ECE" GridPane.rowIndex="5" />
+        <PasswordField id="txt3" fx:id="txt6" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <RadioButton fx:id="on" layoutX="305.0" layoutY="84.0" mnemonicParsing="false" onAction="#isSelectedOn" selected="false" text="online" />
+    <RadioButton fx:id="off" layoutX="391.0" layoutY="84.0" mnemonicParsing="false" onAction="#isSelectedOff" selected="true" text="offline" />
+    <Label layoutX="52.0" layoutY="80.0" prefHeight="26.0" prefWidth="230.0" text="Choix mode de connexion :" />
+    <Text fill="WHITE" layoutX="269.0" layoutY="47.0" scaleX="9.414009977580237" scaleY="7.575297820695493" stroke="#33ff85" strokeType="OUTSIDE" strokeWidth="0.0" text="Hopital ARCIDALE" textAlignment="CENTER">
+      <font>
+        <Font size="6.0" />
+      </font>
+    </Text>
+    <Button fx:id="btnconnect" layoutX="233.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleConnect" prefHeight="26.0" prefWidth="99.0" text="Connecter" />
+  </children>
+</AnchorPane>

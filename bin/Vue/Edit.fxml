@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="background" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controleur.EditController">
+  <children>
+    <ComboBox id="" fx:id="Classe" disable="false" layoutX="246.0" layoutY="57.0" minHeight="20.0" onAction="#handleClasseAction" prefHeight="30.0" prefWidth="201.0" promptText="" visibleRowCount="8">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <GridPane layoutX="147.0" layoutY="140.0" prefWidth="325.0" visible="true">
+      <children>
+        <Label fx:id="lab1" prefWidth="148.5" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Label fx:id="lab2" prefWidth="148.5" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Label fx:id="lab3" prefWidth="148.5" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Label fx:id="lab4" prefWidth="148.5" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Label fx:id="lab5" prefWidth="148.5" text="Label" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+        <TextField fx:id="txt1" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField fx:id="txt2" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="txt3" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <TextField fx:id="txt4" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <TextField fx:id="txt5" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+        <ComboBox id="txt1co" fx:id="Txtco1" prefHeight="21.0" prefWidth="160.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ComboBox id="txt2co" fx:id="Txtco2" prefHeight="21.0" prefWidth="160.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="1">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+        <ComboBox id="txt3co" fx:id="Txtco3" prefHeight="21.0" prefWidth="160.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="Item 1" />
+              <String fx:value="Item 2" />
+              <String fx:value="Item 3" />
+            </FXCollections>
+          </items>
+        </ComboBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="29.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+    <ComboBox id="id1" fx:id="Id1" disable="false" layoutX="87.0" layoutY="108.0" onAction="#setId2" prefHeight="21.0" prefWidth="136.0" visible="true">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <ComboBox id="id2" fx:id="Id2" layoutX="312.0" layoutY="109.0" prefHeight="22.0" prefWidth="160.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label fx:id="labId1" layoutX="0.0" layoutY="108.0" prefWidth="87.0" text="ID" />
+    <Label layoutX="14.0" layoutY="59.0" prefHeight="26.0" prefWidth="215.0" text="Choix élement à modifier" />
+    <Button fx:id="ok" layoutX="273.0" layoutY="340.0" mnemonicParsing="false" onAction="#handleOk" text="OK" />
+    <Button fx:id="validID" layoutX="484.0" layoutY="108.0" mnemonicParsing="false" onAction="#handleValidID" text="valider ID" />
+    <Label fx:id="labId2" layoutX="223.0" layoutY="111.0" prefWidth="87.0" text="Label" />
+  </children>
+</AnchorPane>
